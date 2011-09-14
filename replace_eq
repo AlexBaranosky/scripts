@@ -1,0 +1,5 @@
+#!/bin/bash
+
+replace_str="s/$1/$2/g"
+find /home/alex/workspace/EmailClojMatic -maxdepth 3 -type f | xargs perl -pi -e $replace_str
+
